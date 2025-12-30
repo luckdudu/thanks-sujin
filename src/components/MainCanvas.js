@@ -21,7 +21,7 @@ function MainCanvas() {
           <div className='fw-bold fade-up'>   
             <p className='fs-2'>새해 복 많이받으세요</p>
             <p className='fs-2'>
-              <span className="highlight">경력 4년 웹디자인 지원자</span> <br/>
+              <span className="highlight">경력 5년 웹디자인 지원자</span> <br/>
               <span className="highlight">최수진</span>입니다.
             </p>
           </div>
