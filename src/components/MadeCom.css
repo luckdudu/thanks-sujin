@@ -1,0 +1,17 @@
+.text-color {
+  color: rgb(31, 31, 31);
+}
+
+.back-bg{
+    background-color: #76a1db;
+    height: 300px;
+    width: 100%; 
+}
+
+.first-style{
+    color: #ffffff;
+}
+
+* h5{
+  font-size: 16px !important;
+}

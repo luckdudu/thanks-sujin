@@ -1,0 +1,66 @@
+.text-color {
+  color: rgb(31, 31, 31);
+}
+.text-colorsub {
+  color: #76a1db
+}
+
+.textSize{
+    font-size: 43px ;
+}
+
+/* 주황색배경 */
+.highlight {
+  background-color: transparent; /* 초기: 투명 */
+  color: inherit;                /* 초기: 부모 색상 */
+  padding: 5px;
+  white-space: nowrap;
+
+  animation: highlightFade 0.8s ease-out forwards;
+  animation-delay: .5s; /* fade-up 끝난 후 실행 */
+}
+@keyframes highlightFade {
+  from {
+    background-color: transparent;
+    color: inherit;
+  }
+  to {
+    background-color: #76a1db;
+    color: white;
+  }
+}
+
+/* 프로필속도 */
+/* 위로 올라오며 천천히 나타나는 효과 */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp .4s ease-out forwards;
+}
+
+/* 애니메이션 키프레임 */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up.delay {
+  animation-delay: .7s; /* 0.8초 후에 시작 */
+}
+
+/* 아코디언 열린 상태 (활성화) */
+.accordion-button:not(.collapsed) {
+  background-color: #76a1db;     /* ✅ 원하는 배경색 */
+  color: #fff;
+  font-weight: 800;
+  font-weight: 800px;
+  box-shadow: none;              /* 클릭 시 그림자 제거 */
+}
+
+/* 클릭 시 포커스 라인 제거 */
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}

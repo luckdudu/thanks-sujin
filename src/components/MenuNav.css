@@ -1,0 +1,21 @@
+.Mhover:hover{
+    color: #76a1db !important;
+    font-weight: 700 !important;
+}
+.Thover:hover{
+    color: #252525 !important;
+    font-weight: 700 !important;
+}
+
+
+/* 모바일 화면 (768px 이하) */
+@media (max-width: 768px) {
+  .Thover {
+    margin-right: 3px !important;  /* 모바일에서는 간격 줄임 */
+    font-size: 12px !important; /* 모바일에서는 글씨 작게 */
+  }
+  .Mhover {
+  margin-right: 1px !important;  /* 모바일에서는 간격 줄임 */
+  font-size: 12px !important; /* 모바일에서는 글씨 작게 */
+  }
+}

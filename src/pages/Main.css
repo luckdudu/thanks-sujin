@@ -1,0 +1,13 @@
+/* 배경화면 */
+.bg{
+  color: #000000;
+   background: 
+    linear-gradient(rgba(0, 0, 0, 0.1)), /* ← 반투명 오버레이 */
+    url('../images/bg.png'); /* ← 배경 이미지 */
+  min-height: 100vh; /* 화면 전체 높이 채우기 */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 스크롤해도 고정 */
+  margin: 0;
+  padding: 0;
+}

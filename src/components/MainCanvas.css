@@ -1,0 +1,92 @@
+.link-item {
+  text-decoration: none;
+  color: inherit;
+  transition: font-weight 0.2s ease;
+}
+
+.link-item:hover {
+  font-weight: 700; /* hover 시 글씨 두껍게 */
+}
+
+/* 1번째 딜레이 */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp .7s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2 번째 딜레이 */
+.fade-up.delay {
+  animation-delay: 1s;
+}
+
+.text-color {
+  color: rgb(31, 31, 31);
+}
+
+.btn-color {
+  background-color: #76a1db !important; 
+  border: none !important;             
+  color: white !important;    
+}
+
+/* 텍스트 박스 */
+.highlight {
+  background-color: transparent;
+  color: inherit;
+  padding: 1px 4px;       /* 상하 1px, 좌우 4px */
+  font-weight: bold;
+  white-space: nowrap;
+  line-height: 1.8;       /* ✅ 줄 간격 줄이기 */
+  
+  animation: highlightFade 0.8s ease-out forwards;
+  animation-delay: 1.3s;
+}
+
+
+@keyframes highlightFade {
+  from {
+    background-color: transparent;
+    color: inherit;
+  }
+  to {
+    background-color: #76a1db;
+    color: white;
+  }
+}
+
+.ribbon {
+  width: 50px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -35px;
+  top: -20px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #76a1db;
+  color: white;
+}
+
+/* offcavas */
+.floating-btn {
+  position: fixed; /* 혹은 absolute (부모 요소 기준) */
+  top: 80px;       /* 상단 여백 */
+  left: 1300px;      /* 왼쪽 여백 */  
+}
+
+/* 모바일에서만 특정 위치를 잡고 싶다면 미디어 쿼리 사용 */
+@media (max-width: 768px) {
+  .floating-btn {
+    top: 100px;
+    left: 60px;
+  }
+}

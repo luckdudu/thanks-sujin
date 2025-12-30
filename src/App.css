@@ -1,0 +1,11 @@
+/* 배경화면 */
+.bg{
+  color: #000000;
+  background: rgba(0, 0, 0, .1);
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 스크롤해도 고정 */
+  margin: 0;
+  padding: 0;
+}
